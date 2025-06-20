@@ -122,7 +122,7 @@ async def on_message(message):
     await context_bot.add_message_to_cache(message)
     
     # Check if the bot is mentioned in the message
-    if bot.user in message.mentions:
+    if bot.user in message.mentions or (message.reference and message.reference.resolved and message.reference.resolved.author == bot.user):
         async with message.channel.typing():  # Show typing indicator
             try:
                 # Get channel id and message id that triggered the mention
@@ -171,15 +171,6 @@ async def context_size(ctx):
     channel_id = ctx.channel.id
     size = len(context_bot.message_cache.get(channel_id, []))
     await ctx.send(f"I'm keeping track of {size} recent messages in this channel.")
-
-@bot.command()
-async def assign(ctx):
-    role=discord.utils.get(ctx.guild.roles, name=secret_role)
-    if role:
-        await ctx.author.add_roles(role)
-        await ctx.send(f'{ctx.author.mention}, you are an {secret_role}!')
-    else:
-        await ctx.send(f'Sorry {ctx.author.mention}, the role {secret_role} does not exist.')
 
 # Run the bot
 if __name__ == "__main__":
