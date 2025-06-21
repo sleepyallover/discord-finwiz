@@ -1,5 +1,5 @@
 ## FinWiz
-discord-finwiz is a discord bot, specialized in finance.
+discord-finwiz is a discord bot, specialized in financial literacy.
 This current version is an MVP for an upcoming project.
 
 ## Idea
