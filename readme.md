@@ -8,4 +8,4 @@ It's now created on discord, but is planned to be created on other social media 
 
 Basic concepts:
 ![POC 1](https://github.com/sleepyallover/poc1.png)
-![POC 1](https://github.com/sleepyallover/poc2.png)
+![POC 2](https://github.com/sleepyallover/poc2.png)
