@@ -7,5 +7,5 @@ A social media grok-like bot that responds to a mention-based questions regardin
 It's now created on discord, but is planned to be created on other social media (e.g. Twitter/X, Meta).
 
 Basic concepts:
-![](poc 1.png)
-![](poc 2.png)
+![POC 1](https://guthub.com/sleepyallover/poc 1.png)
+![POC 1](https://guthub.com/sleepyallover/poc 2.png)
